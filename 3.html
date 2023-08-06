@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+</head>
+
+<body>
+    <img id="image" src="https://www.rabbil.com/static/media/navlogo.ba886d8f7b6c18425cb0c50e5b121a4d.svg"
+        alt="Image 1">
+    <button id="switchImage1Btn">Switch to Image 1</button>
+    <button id="switchImage2Btn">Switch to Image 2</button>
+
+    <script>
+        const image = document.getElementById("image");
+        const switchImage1Btn = document.getElementById("switchImage1Btn");
+        const switchImage2Btn = document.getElementById("switchImage2Btn");
+
+        function switchToImage1() {
+            image.src = "https://www.rabbil.com/static/media/navlogo.ba886d8f7b6c18425cb0c50e5b121a4d.svg";
+            image.alt = "Image 1";
+        }
+
+        function switchToImage2() {
+            image.src = "https://cdn.ostad.app/public/upload/2022-11-27T06-52-05.802Z-logo%20ostad.png";
+            image.alt = "Image 2";
+        }
+
+        switchImage1Btn.addEventListener("click", switchToImage1);
+        switchImage2Btn.addEventListener("click", switchToImage2);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+</head>
+
+<body>
+    <button id="incrementBtn">Click Me!</button>
+    <p id="countDisplay">0</p>
+
+    <script>
+        const incrementBtn = document.getElementById("incrementBtn");
+        const countDisplay = document.getElementById("countDisplay");
+
+        let count = 0;
+
+        function handleButtonClick() {
+            count++;
+
+            countDisplay.textContent = count;
+        }
+
+        incrementBtn.addEventListener("click", handleButtonClick);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AJAX Example</title>
+</head>
+
+<body>
+    <button onclick="ExcGetRequest()">ExcGetRequest</button>
+
+    <script>
+        function ExcGetRequest() {
+            var URL = "https://crud.teamrabbil.com/api/v1/ReadProduct";
+            var configuration = { method: "GET" };
+
+            fetch(URL, configuration)
+                .then(response => response.json())
+                .then(result => console.log(result))
+                .catch(err => console.log(err));
+        }
+    </script>
+</body>
+
+</html>

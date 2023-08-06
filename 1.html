@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+
+<body>
+    <button id="changeContentBtn">Click here to change the image</button>
+    <div id="contentDiv">
+        <img id="image" src="https://cdn.ostad.app/public/upload/2022-11-27T06-52-05.802Z-logo%20ostad.png"
+            alt="Initial Image">
+    </div>
+    <script>
+        const changeContentBtn = document.getElementById("changeContentBtn");
+        const contentDiv = document.getElementById("contentDiv");
+        const image = document.getElementById("image");
+        function handleButtonClick() {
+            image.src = "https://rabbil.com/files/rabbilVai.png";
+            image.alt = "New Image";
+        }
+        changeContentBtn.addEventListener("click", handleButtonClick);
+    </script>
+</body>
+
+</html>
