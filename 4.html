@@ -10,10 +10,10 @@
 
     <script>
         function ExcGetRequest() {
-            var URL = "https://crud.teamrabbil.com/api/v1/ReadProduct";
+            var api = "https://jsonplaceholder.typicode.com/posts";
             var configuration = { method: "GET" };
 
-            fetch(URL, configuration)
+            fetch(api, configuration)
                 .then(response => response.json())
                 .then(result => console.log(result))
                 .catch(err => console.log(err));
